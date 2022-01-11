@@ -2,9 +2,9 @@
   grid-row: content-s/content-e;
   grid-column: s/e;
 
-  // &__page-title {
+  &__page-title {
 
-  // }
+  }
 
   &__form {
     display: grid;
@@ -38,12 +38,12 @@
   }
 
   &__login {
-    grid-row: button-s/button-e;
+    grid-row: buttons-s/buttons-e;
     grid-column: create-s/create-e;
   }
 
-  &___back {
-    grid-row: button-s/button-e;
+  &__back {
+    grid-row: buttons-s/buttons-e;
     grid-column: back-s/back-e;
   }
   
