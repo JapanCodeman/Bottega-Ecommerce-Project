@@ -102,7 +102,6 @@ export function fetchUserPurchases() {
               shippingAddress: '348 Yo State Street'
           }
       },
-
     ]
   })
 }
