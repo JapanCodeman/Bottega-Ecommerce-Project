@@ -43,9 +43,8 @@ class Shop extends Component {
     }
 
     render() {
-        if(this.state.showCart == true) {
-        return <ShopCart className='shop__cart'/>} 
-        else{
+        return <ShopCart className='shop__cart'/>
+
         return (
             <div className='shop'>
                 <ShopSearchBar onSubmit={this.onSubmit} className='shop__search-bar'/>
@@ -61,9 +60,10 @@ class Shop extends Component {
                 {
                     this.state.showCart ? <ShopCart className='shop__cart'/> : ''
                 }
+                
                 {/* shop cart button */}
             </div>
-        )}
+        )
     }
 }
 

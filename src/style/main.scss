@@ -1,41 +1,38 @@
+
 html {
     font-size: 62.5%;
 }
-
 *,
 *::after,
 *::before {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: inherit;
 }
-
 body {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     color: #808080;
 }
-
 @import 'layout';
 @import 'headernavbar';
 @import 'page-title';
 @import 'form-fields';
 @import 'details';
-
-// Auth
-@import './auth/signin';
-@import './auth/signup';
-
-// Account
+// AUTH 
+@import 'auth/signin';
+@import 'auth/signup';
+// ACCOUNT
+@import 'account/account';
 @import 'account/purchase-history';
 @import 'account/account-information';
-@import 'account/account';
+// SHOP
+@import 'shop/shop';
+@import 'shop/shop-search-bar';
+@import 'shop/shop-product';
 
+// CART
+@import 'shop/shop-cart';
 
-// Shop
-@import 'shop/shop.scss';
-@import 'shop/shop-search-bar.scss';
-@import 'shop/shop-product.scss';
-
-// Quantity
+// QUANTITY
 @import 'quantity';
 @import 'green-price-tag';
