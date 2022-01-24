@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import PageTitle from '../pagetitle';
+import PageTitle from '../pageTitle';
 import ReviewForm from './reviewForm';
 
 class Review extends Component {
@@ -19,11 +19,9 @@ class Review extends Component {
 
   render () {
     return (
-      <div>
-        <div className='review'>
-          <PageTitle className='review__page-title' title='Order Review'/>
-          <ReviewForm className='review__form' onSubmit={this.onSubmit}/>
-        </div>
+      <div className='review'>
+        <PageTitle className='review__page-title' title='Order Review'/>
+        <ReviewForm className='review__form' onSubmit={this.onSubmit}/>
       </div>
     );
   }

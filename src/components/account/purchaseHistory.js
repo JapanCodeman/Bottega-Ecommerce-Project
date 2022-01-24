@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import PageTitle from '../pagetitle';
+import PageTitle from '../pageTitle';
 import PurchaseDetail from './purchaseDetail';
 import Purchases from './purchases';
 

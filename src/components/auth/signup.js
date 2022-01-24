@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
 import SignUpForm from './signupform';
-import PageTitle from '../pagetitle';
+import PageTitle from '../pageTitle';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
