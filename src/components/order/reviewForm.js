@@ -9,7 +9,12 @@ import ReviewProducts from './reviewProducts';
 class ReviewForm extends Component {
     render() {
         const { className, handleSubmit, subtotal } = this.props;
-        let tax = 0.1;
+        let tax = 0.10;
+        if(subtotal == 0) {
+            let tax = 0.00
+        } else {
+            let tax = 0.10
+        };
         return (
             <form onSubmit={handleSubmit} className={`${className} review-form`}>
                 <div className='review-form__legend'>
@@ -20,7 +25,7 @@ class ReviewForm extends Component {
                 <ReviewProducts className='review-form__products'/>
                 <div className='review-form__line'></div>
                 <Field className='review-form__proceed'
-                onClick={() => history.push('/signin')}
+                onClick={() => history.push('/information/shipping')}
                 type='submit'
                 title='Proceed to Checkout'
                 name='proceed'
