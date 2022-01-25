@@ -1,4 +1,4 @@
-.underlined_title {
+.underlined-title {
   font-size: 14px;
   font-weight: 600;
   border-bottom: 1px solid #CCC;
@@ -7,7 +7,7 @@
 .info-title {
   display: grid;
   grid-template-rows: [s] 1fr [e];
-  grid-template-columns: [s] 1fr [m]m 1fr [e];
+  grid-template-columns: [s] 1fr [m] 1fr [e];
   align-items: center;
   &__title {
     grid-column: s/m;
